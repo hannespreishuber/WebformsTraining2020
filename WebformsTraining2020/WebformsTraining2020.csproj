@@ -146,6 +146,7 @@
     <Content Include="modul03\WebForm1.aspx" />
     <Content Include="modul03\WebForm2.aspx" />
     <Content Include="modul03\WebForm3.aspx" />
+    <Content Include="modul04\DateiUp.aspx" />
     <Content Include="modul04\exportexcel.aspx" />
     <Content Include="modul04\exportxml.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -252,6 +253,13 @@
     <Compile Include="modul03\WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
+    <Compile Include="modul04\DateiUp.aspx.cs">
+      <DependentUpon>DateiUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modul04\DateiUp.aspx.designer.cs">
+      <DependentUpon>DateiUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="modul04\exportexcel.aspx.cs">
       <DependentUpon>exportexcel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -293,6 +301,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="upload\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
