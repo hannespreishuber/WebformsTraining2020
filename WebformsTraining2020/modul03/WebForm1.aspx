@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Panel ID="Panel1" runat="server" CssClass="bg-info">
+            <asp:Panel ID="Panel1" runat="server" Class="bg-info"  >
                 yxcxcvxc
                 <asp:TextBox ID="TextBox1" runat="server" TextMode="MultiLine" Rows="3"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" Text="Webforms Button" 
@@ -24,7 +24,7 @@
     <button onclick="updateui();">html Button</button>
     <script>
         function updateui() {
-            
+            console.log("bind da");
             document.getElementById('<%=Panel1.ClientID%>').style.backgroundColor =
                 document.getElementById('<%=TextBox1.ClientID%>').value;
     
