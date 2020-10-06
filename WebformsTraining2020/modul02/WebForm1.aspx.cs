@@ -14,10 +14,10 @@ namespace WebformsTraining2020.modul02
         {
             if (!IsPostBack)
             {
- MyProperty = "hannes&co";
+                MyProperty = "hannes&co";
             }
-            
-           
+
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
