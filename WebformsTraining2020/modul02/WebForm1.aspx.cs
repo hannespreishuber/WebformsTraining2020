@@ -9,10 +9,15 @@ namespace WebformsTraining2020.modul02
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        public int MyProperty { get; set; }
+        public string MyProperty { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            MyProperty = 42;
+            if (!IsPostBack)
+            {
+ MyProperty = "hannes&co";
+            }
+            
+           
         }
 
         protected void Button1_Click(object sender, EventArgs e)
