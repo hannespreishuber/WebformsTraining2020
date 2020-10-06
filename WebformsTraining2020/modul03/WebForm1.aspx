@@ -14,14 +14,14 @@
             <asp:Panel ID="Panel1" runat="server" CssClass="bg-info">
                 yxcxcvxc
                 <asp:TextBox ID="TextBox1" runat="server" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                <asp:Button ID="Button1" runat="server" Text="Button" 
+                <asp:Button ID="Button1" runat="server" Text="Webforms Button" 
                     OnClientClick="updateui();return false;"/>
             </asp:Panel>
 
 
         </div>
     </form>
-    <button onclick="updateui();"></button>
+    <button onclick="updateui();">html Button</button>
     <script>
         function updateui() {
             
