@@ -147,6 +147,7 @@
     <Content Include="modul03\WebForm2.aspx" />
     <Content Include="modul03\WebForm3.aspx" />
     <Content Include="modul04\exportexcel.aspx" />
+    <Content Include="modul04\exportxml.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -257,6 +258,13 @@
     </Compile>
     <Compile Include="modul04\exportexcel.aspx.designer.cs">
       <DependentUpon>exportexcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modul04\exportxml.aspx.cs">
+      <DependentUpon>exportxml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modul04\exportxml.aspx.designer.cs">
+      <DependentUpon>exportxml.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
