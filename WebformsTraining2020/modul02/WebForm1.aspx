@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebformsTraining2020.modul02.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs"
+    Inherits="WebformsTraining2020.modul02.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -13,6 +14,16 @@
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
         </div>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <%=DateTime.Now %>
+
+        <b><%MyProperty %></b>
     </form>
+    <script runat="server">
+        void hannes()
+        {
+
+        }
+    </script>
 </body>
 </html>
