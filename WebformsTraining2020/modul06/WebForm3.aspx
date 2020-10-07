@@ -20,10 +20,26 @@
 
                 </div>
                 <div class="col">
-                    <asp:Button ID="Button1"  OnClick="Button1_Click"
+                    <asp:Button ID="Button1" OnClick="Button1_Click"
                         CssClass="btn btn-outline-primary"
                         runat="server" Text="suchen" />
 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary">Suchergebnisse</li>
+                        <%foreach (var item in Liste)
+                            {%>
+                        <li class="list-group-item">
+                            <h5><%=item.Ort %></h5>
+                            <span class="badge float-right">
+                                <%=item.PLZ %>
+                            </span>
+                        </li>
+                        <% } %>
+                    </ul>
                 </div>
             </div>
         </div>
