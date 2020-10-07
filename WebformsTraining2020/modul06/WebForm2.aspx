@@ -26,7 +26,7 @@
                 <div class="col" style="background-color: red">
                     dfgdfg
                 </div>
-                <div class="col col-md-12" style="background-color: yellow">
+                <div class="col col-md-12 text-center" style="background-color: yellow">
                     dfgfdg
                     <br />
                     sdfsdf
