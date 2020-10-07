@@ -30,7 +30,7 @@
                 <div class="col">
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-primary">Suchergebnisse</li>
-                        <%foreach (var item in Liste)
+                                                <%foreach (var item in Liste)
                             {%>
                         <li class="list-group-item">
                             <h5><%=item.Ort %></h5>

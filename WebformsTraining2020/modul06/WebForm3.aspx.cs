@@ -18,11 +18,24 @@ namespace WebformsTraining2020.modul06
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            var _liste= new List<PLZORT>();
             var daten = File.ReadAllLines(Server.MapPath("~/app_data/plzort.csv"));
             foreach (var item in daten)
             {
                 var s = item.Split(';');
-                Liste.Add(new PLZORT() { PLZ = s[0], Ort = s[1] });
+                _liste.Add(new PLZORT() { PLZ = s[0], Ort = s[1] });
+            }
+            int number;
+
+            bool success = Int32.TryParse(TextBox1.Text, out number);
+            if (success) //PLZ
+            {
+                Liste = _liste.Where(x => x.PLZ.Contains(TextBox1.Text)).ToList(); //LINQ
+
+            }
+            else //Ort
+            {
+                Liste = _liste.Where(x => x.Ort.ToLower().Contains(TextBox1.Text.ToLower())).ToList();
             }
 
         }
