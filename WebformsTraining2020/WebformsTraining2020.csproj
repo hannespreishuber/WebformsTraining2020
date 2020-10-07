@@ -158,6 +158,7 @@
     <Content Include="modul05\WebForm5.aspx" />
     <Content Include="modul05\WebForm6.aspx" />
     <Content Include="modul05\WebForm7.aspx" />
+    <Content Include="modul05\WebForm8.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -338,6 +339,13 @@
     </Compile>
     <Compile Include="modul05\WebForm7.aspx.designer.cs">
       <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modul05\WebForm8.aspx.cs">
+      <DependentUpon>WebForm8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modul05\WebForm8.aspx.designer.cs">
+      <DependentUpon>WebForm8.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
