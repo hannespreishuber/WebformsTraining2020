@@ -22,6 +22,16 @@
                     sdfsdf
                 </div>
             </div>
+            <div class="row">
+                <div class="col" style="background-color: red">
+                    dfgdfg
+                </div>
+                <div class="col col-md-12" style="background-color: yellow">
+                    dfgfdg
+                    <br />
+                    sdfsdf
+                </div>
+            </div>
         </div>
     </form>
 </body>
