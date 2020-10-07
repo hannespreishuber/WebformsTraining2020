@@ -11,16 +11,25 @@ namespace WebformsTraining2020.modul07
 {
 
 
-    public partial class WebForm1
+    public partial class WebUserControl1
     {
 
         /// <summary>
-        /// WebUserControl1-Steuerelement
+        /// TextBox1-Steuerelement
         /// </summary>
         /// <remarks>
         /// Automatisch generiertes Feld
         /// Zum Ändern Felddeklaration aus der Designerdatei in eine Code-Behind-Datei verschieben.
         /// </remarks>
-        protected global::WebformsTraining2020.modul07.WebUserControl1 WebUserControl1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+
+        /// <summary>
+        /// Button1-Steuerelement
+        /// </summary>
+        /// <remarks>
+        /// Automatisch generiertes Feld
+        /// Zum Ändern Felddeklaration aus der Designerdatei in eine Code-Behind-Datei verschieben.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
