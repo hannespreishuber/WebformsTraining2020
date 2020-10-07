@@ -18,6 +18,15 @@ namespace WebformsTraining2020
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Application["user"] = 0;
+        }
+        void Session_Start(object sender, EventArgs e)
+        {
+            Application["user"] = ((int)Application["user"]) + 1;
+        }
+        void Session_End(object sender, EventArgs e)
+        {
+            Application["user"] = ((int)Application["user"]) - 1;
         }
     }
 }
