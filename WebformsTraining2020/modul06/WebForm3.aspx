@@ -34,7 +34,7 @@
                             {%>
                         <li class="list-group-item">
                             <h5><%=item.Ort %></h5>
-                            <span class="badge float-right">
+                            <span class="badge badge-secondary float-right">
                                 <%=item.PLZ %>
                             </span>
                         </li>
