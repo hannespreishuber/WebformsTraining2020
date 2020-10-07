@@ -13,7 +13,11 @@ namespace WebformsTraining2020.modul07
         public string Placeholder { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            TextBox1.Attributes.Add("Placeholder", Placeholder);
+            TextBox1.Attributes.Add("Placeholder", Placeholder); //HTML5 INput placeholder Attribut
+
+            //var btn = new Button();
+            //btn.Text = "clicme";
+            //PlaceHolder1.Controls.Add(btn);
         }
     }
 }

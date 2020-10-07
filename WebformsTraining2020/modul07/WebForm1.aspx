@@ -6,5 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Content</h1>
-    <uc1:WebUserControl1 runat="server" id="WebUserControl1" Placeholder="Da gehört text rein"/>
+    <uc1:WebUserControl1 runat="server" id="WebUserControl1" 
+        Text="Hallo "
+        Placeholder="Da gehört text rein"/>
 </asp:Content>
