@@ -30,13 +30,13 @@
                 <div class="col">
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-primary">Suchergebnisse</li>
-                                                <%foreach (var item in Liste)
+                        <%foreach (var item in Liste)
                             {%>
                         <li class="list-group-item">
-                            <h5><%=item.Ort %></h5>
-                            <span class="badge badge-secondary float-right">
+                            <h5><%=item.Ort %><span class="badge badge-secondary float-right">
                                 <%=item.PLZ %>
-                            </span>
+                            </span></h5>
+
                         </li>
                         <% } %>
                     </ul>
