@@ -28,7 +28,8 @@
                 <div class="list-group-item ">
                     <div class="row">
                         <div class="col-2"><%#Item.CustomerID%></div>
-                        <div class="col-8"><%# Item.CompanyName %> </div>
+                        <div class="col-7"><%# Item.CompanyName %> </div>
+                          <div class="col-1"><%# Item.Orders.Count() %> </div>
                         <div class="col-1">
                             <a href="WebForm3/<%#Item.CustomerID%>">
                                 <span class="oi oi-brush"></span></a>
