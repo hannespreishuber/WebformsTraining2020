@@ -9,11 +9,7 @@ namespace WebformsTraining2020.modul09
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
+    
         public IEnumerable<WebformsTraining2020.modul09.Customers> Repeater1_GetData()
         {
             var db = new Model1();
