@@ -13,7 +13,7 @@ namespace WebformsTraining2020.modul08
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -40,6 +40,19 @@ namespace WebformsTraining2020.modul08
 
             Repeater1.DataSource = liste;
             Repeater1.DataBind();
+
+        }
+
+        protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            switch (e.CommandName)
+            {
+                case "delete":
+                    Response.Write($"{e.CommandArgument.ToString()} sollte gelöscht werdne");
+                    break;
+                default:
+                    break;
+            }
 
         }
     }

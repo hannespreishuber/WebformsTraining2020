@@ -14,13 +14,16 @@
 
     <div class="list-group">
         <div class="list-group-item list-group-item-primary">Northwind Kunden</div>
-        <asp:Repeater ID="Repeater1" runat="server">
+        <asp:Repeater ID="Repeater1" runat="server"
+            OnItemCommand="Repeater1_ItemCommand">
             <ItemTemplate>
                 <div class="list-group-item ">
 
                     <div class="row">
                         <div class="col-1">
-                            <asp:LinkButton ID="LinkButton1" runat="server">
+                            <asp:LinkButton ID="LinkButton1" runat="server"
+                                CommandName="delete"
+                                CommandArgument='<%#Eval("ID") %>' >
                              <span class="oi oi-delete"></span></asp:LinkButton>
                         
                         </div>
