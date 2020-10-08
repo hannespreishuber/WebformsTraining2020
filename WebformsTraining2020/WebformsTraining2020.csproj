@@ -1749,6 +1749,8 @@
     <Content Include="modul09\WebForm1.aspx" />
     <Content Include="modul09\WebForm2.aspx" />
     <Content Include="modul09\WebForm3.aspx" />
+    <Content Include="modul10\HtmlPage1.html" />
+    <Content Include="modul10\WebForm1.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -3478,6 +3480,13 @@
     </Compile>
     <Compile Include="modul09\WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modul10\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modul10\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
