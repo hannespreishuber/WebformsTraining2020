@@ -20,7 +20,7 @@
     </div>
       <div class="list-group">
         <div class="list-group-item list-group-item-primary">Northwind Kunden</div>
-        <asp:Repeater ID="Repeater1" runat="server"
+        <asp:ListView ID="Repeater1" runat="server"
             ItemType="WebformsTraining2020.modul09.Customers"
             SelectMethod="Repeater1_GetData"
              >
@@ -36,7 +36,10 @@
                     </div>
                 </div>
             </ItemTemplate>
-        </asp:Repeater>
+            <EmptyDataTemplate>
+                 <div class="list-group-item list-group-item-warning">keine Daten</div>
+            </EmptyDataTemplate>
+        </asp:ListView>
     </div>
     </form>
 </body>
