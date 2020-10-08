@@ -13,7 +13,8 @@
             <ItemTemplate>
                 <div class="list-group-item ">
                     <div class="row">
-                        <div class="col-1"> <span class="oi oi-euro"></span></div>
+                        <div class="col-1"> 
+                            <span class='oi <%#(Eval("Country").ToString()=="Germany")?"oi-check":""%>'></span></div>
                         <div class="col-2"><%#Eval("CustomerID") %></div>
                         <div class="col-9"><%#Eval("CompanyName") %> </div>
                     </div>
