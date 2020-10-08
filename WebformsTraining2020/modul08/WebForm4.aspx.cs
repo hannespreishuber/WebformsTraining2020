@@ -13,12 +13,18 @@ namespace WebformsTraining2020.modul08
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
             var liste = new List<Kunden>();
             using (var con = new SqlConnection(
                 ConfigurationManager.ConnectionStrings["northwindConnectionString1"].ConnectionString))
             {
-                var sql = "select * from customers";
+                var sql = "select * from customers where companyname like '%'+@par+'%' or contactname like '%'+@par+'%'";
                 var cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@par", TextBox1.Text);
                 con.Open();
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -34,6 +40,7 @@ namespace WebformsTraining2020.modul08
 
             Repeater1.DataSource = liste;
             Repeater1.DataBind();
+
         }
     }
 }
