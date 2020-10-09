@@ -23,9 +23,14 @@
     <script>
         var chat = $.connection.myHub1;
         $.connection.hub.start().done(function () {
-            $("ul").append("<li>connected....</li>");
+            $("#chatliste").append("<li>connected....</li>");
         });
+        function send() {
 
-
+            chat.server.sendMsg($("#text1").val());
+        }
+        chat.client.updateListe = function (data) {
+            $("#chatliste").append("<li>"+data+"</li>");
+        };
     </script>
 </asp:Content>

@@ -1,0 +1,6 @@
+﻿Signalr 2.41 paket
+App_start Startup.cs (owin Startup Klasse)
+app.MapSignalR();
+
+  <script src="../Scripts/jquery.signalR-2.4.1.js"></script>
+  <script src="../signalR/Hubs"></script> 

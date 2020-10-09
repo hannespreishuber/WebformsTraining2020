@@ -1832,6 +1832,7 @@
     <Content Include="Modul14\WebForm1.aspx" />
     <Content Include="Modul14\WebForm2.aspx" />
     <Content Include="Modul14\WebUserControl1.ascx" />
+    <Content Include="modul15\signalrtipps.txt" />
     <Content Include="modul15\WebForm1.aspx" />
     <Content Include="modul15\WebForm2.aspx" />
     <Content Include="modul15\WebService1.asmx" />
