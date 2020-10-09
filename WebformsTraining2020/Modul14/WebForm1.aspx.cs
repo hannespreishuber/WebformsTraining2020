@@ -23,15 +23,15 @@ namespace WebformsTraining2020.Modul14
             if (Cache["customers"] == null)
             {
                 liste = db.Customers.ToList();
-                Cache.Add("customers", liste,null,DateTime.Now.AddMinutes(10),new TimeSpan(0,0,10),
+                Cache.Add("customers", liste,null, DateTime.MaxValue, new TimeSpan(0,0,10),
                     System.Web.Caching.CacheItemPriority.Normal,null);
-                Label1.Text = "aus  cache";
+                Label1.Text = "frische Daten";
             }
             else
             {
              liste    = (List<Customers>)Cache["customers"];
 
-                Label1.Text = "frische daten";
+                Label1.Text = "aus Cache";
             }
 
         }
