@@ -16,7 +16,13 @@ namespace WebformsTraining2020.modul12
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            System.Threading.Thread.Sleep(2000);
             TextBox1.Text = (int.Parse(TextBox1.Text) + 1).ToString();
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            Label1.Text = DateTime.Now.ToString();
         }
     }
 }

@@ -10,4 +10,16 @@
         </ContentTemplate>
 
     </asp:UpdatePanel>
+    <hr />
+    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+        <ContentTemplate>
+            <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="100000"></asp:Timer>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
+        <ProgressTemplate>
+            <img src="200.gif" />
+        </ProgressTemplate>
+    </asp:UpdateProgress>
 </asp:Content>
