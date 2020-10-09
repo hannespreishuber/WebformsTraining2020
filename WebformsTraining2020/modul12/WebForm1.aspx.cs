@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebformsTraining2020
+namespace WebformsTraining2020.modul12
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
@@ -17,12 +16,7 @@ namespace WebformsTraining2020
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Debug.WriteLine("Hallo Welt");
-
-            //int i = 0;
-            //int x = 1 / i;
-            Trace.Warn("das hätte nie passieren dürfen");
-
+            TextBox1.Text = (int.Parse(TextBox1.Text) + 1).ToString();
         }
     }
 }
